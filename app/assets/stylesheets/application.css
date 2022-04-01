@@ -13,10 +13,16 @@
  *= require_tree .
  *= require_self
  */
+*{
+  font-family: 'Roboto Slab', serif;
+}
 
  body {
   margin: 0;
   padding: 0;
+}
+p{
+  font-family: 'Roboto Slab', serif;
 }
 
 h1 {
@@ -33,10 +39,18 @@ h2 {
   background: white;
   display:flex;
   justify-content: space-between;
-  border-bottom: 3px black;
+  border-bottom: solid rgba(128, 128, 128,0.1 );
 }
 
 .right-nav {
   display:flex;
   justify-content: space-around;
+}
+.filter-box {
+  padding:20px;
+  position:fixed;
+  border: solid rgba(128, 128, 128,0.1 );
+  background: white;
+  width:20%;
+  height:100%;
 }

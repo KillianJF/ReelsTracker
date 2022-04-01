@@ -4,13 +4,22 @@
 
   <div class="right-nav">
     <div><%= link_to 'New Post', new_trend_path %></div>
-    <input type="text" placeholder="Search...">
+    <button id='filterbutton'>Filter</button>
   </div>
 </div>
 
 <h2>Bienvenue sur ReelsTracker ! </h2>
 
-
+<div id='filterdiv' class = filter-box style='display:none;'>
+  <p>min virality</p>
+  <input type="text">
+  <p>max virality</p>
+  <input type="text">
+  <p>category</p>
+  <select size="1" name="classe" id="classe" title="Sélectionnez la classe !" style="padding:2px; border:solid 1px black; color:steelblue; border-radius:5px;" >
+        	<option value="-1">- - - select an option - - -</option>
+  </select>
+</div>
 
 <br>
 
@@ -38,3 +47,18 @@
 
     <% end %>
   </tbody>
+
+
+<script>
+const targetDiv = document.getElementById("filterdiv");
+const btn = document.getElementById("filterbutton");
+btn.onclick = function () {
+  if (targetDiv.style.display !== "none") {
+    targetDiv.style.display = "none";
+  } else {
+    targetDiv.style.display = "block";
+  }
+};
+
+
+</script>
