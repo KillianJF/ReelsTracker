@@ -1,9 +1,13 @@
 class TrendsController < ApplicationController
   before_action :set_trend, only: %i[ show edit update destroy ]
 
+
+
+
   # GET /trends or /trends.json
   def index
     @trends = Trend.all
+
   end
 
   # GET /trends/1 or /trends/1.json

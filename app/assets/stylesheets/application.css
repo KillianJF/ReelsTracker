@@ -15,9 +15,12 @@
  */
 *{
   font-family: 'Roboto Slab', serif;
+
 }
 
  body {
+  background-image : url(../../assets/images/background.jpg);
+  background-repeat: no-repeat, repeat;
   margin: 0;
   padding: 0;
 }
@@ -35,7 +38,8 @@ h2 {
 }
 
 .navbar {
-
+  position:sticky;
+  top: 0;
   background: white;
   display:flex;
   justify-content: space-between;
