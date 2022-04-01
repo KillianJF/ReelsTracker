@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+
+  background: white;
+  display:flex;
+  justify-content: space-between;
+  border-bottom: 3px black;
+}
+
+.right-nav {
+  display:flex;
+  justify-content: space-around;
+}
+
+
+.cards {
+  display:flex;
+  justify-content:center;
+}
+
+
+.instagram-media {
+  margin-right:5%;
+}
+
+
+.cards-text-principal {
+  display:flex;
+  justify-content: space-between;
+}
+
+
+.cards-textbox {
+  width : 40%;
+  margin: 0% 5%;
+  padding : 3% 5% ;
+  background-color: grey;
+}
