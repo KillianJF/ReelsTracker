@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 <div class="navbar">
-  <img src="" alt="logo">
+  <h1>ReelsTracker</h1>
 
   <div class="right-nav">
     <div><%= link_to 'New Post', new_trend_path %></div>
@@ -8,40 +8,9 @@
   </div>
 </div>
 
-<h1>Bienvenue sur ReelsTracker Killian ! </h1>
+<h2>Bienvenue sur ReelsTracker ! </h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Label</th>
-      <th>Description</th>
-      <th>Domain</th>
-      <th>Example</th>
-      <th>Started date</th>
-      <th>Posting date</th>
-      <th>Virality</th>
-      <th>Ideas</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @trends.each do |trend| %>
-      <tr>
-        <td><%= trend.label %></td>
-        <td><%= trend.description %></td>
-        <td><%= trend.domain %></td>
-
-        <td><%= trend.started_date %></td>
-        <td><%= trend.posting_date %></td>
-        <td><%= trend.virality %></td>
-        <td><%= trend.ideas %></td>
-        <td><%= link_to 'Show', trend %></td>
-        <td><%= link_to 'Destroy', trend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 
@@ -53,16 +22,16 @@
       <div class="cards-textbox">
         <div class="cards-text-principal">
           <div class="cards-text-principal-one">
-          <h2><%= trend.label %></h2>
-          <h3 class="cards-domain"><%= trend.domain %></h3>
+          <h3><%= trend.label %></h3>
+          <h4 class="cards-domain"><%= trend.domain %></h4>
           </div>
-          <h3><%= trend.posting_date %></h3>
+          <h4><%= trend.posting_date %></h4>
         </div>
-        <h3><%= trend.description %></h3>
+        <h4><%= trend.description %></h4>
         <div class="cards-text-caracteristics">
-          <h3>First seen at : <%= trend.started_date %></h3>
-          <h3>Virality :  <%= trend.virality %></h3>
-          <h3>Remix ideas : <%= trend.ideas %></h3>
+          <h4>First seen at : <%= trend.started_date %></h4>
+          <h4>Virality :  <%= trend.virality %></h4>
+          <h4>Remix ideas : <%= trend.ideas %></h4>
         </div>
         <td><%= link_to 'Edit', edit_trend_path(trend) %></td>
       </div>
