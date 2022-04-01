@@ -19,6 +19,14 @@
   padding: 0;
 }
 
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
 .navbar {
 
   background: white;
@@ -52,7 +60,11 @@
 
 .cards-textbox {
   width : 40%;
+  height : 700px;
   margin: 0% 5%;
   padding : 3% 5% ;
-  background-color: grey;
+  background-color: white;
+  box-shadow: -10px 5px 5px rgba(128,128,128,0.1);
+  border-radius : 40px;
+  border: solid rgba(128,128,128,0.05) ;
 }
