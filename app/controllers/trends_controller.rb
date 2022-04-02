@@ -5,7 +5,7 @@ class TrendsController < ApplicationController
 
   # GET /trends or /trends.json
   def index
-    @trends = Trend.all
+    @trends = Trend.order(:posting_date).reverse_order
 
   end
 
