@@ -3,7 +3,6 @@ class TrendsController < ApplicationController
 
 
 
-
   # GET /trends or /trends.json
   def index
     @trends = Trend.all
