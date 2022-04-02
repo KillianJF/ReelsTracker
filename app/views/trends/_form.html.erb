@@ -1,4 +1,10 @@
 <%= form_with(model: trend) do |form| %>
+
+
+
+
+
+
   <% if trend.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(trend.errors.count, "error") %> prohibited this trend from being saved:</h2>
@@ -10,6 +16,10 @@
       </ul>
     </div>
   <% end %>
+
+
+
+<div class="field-container">
 
   <div class="field">
     <%= form.label :label %>
@@ -54,4 +64,6 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+
+</div>
 <% end %>
